@@ -1,0 +1,277 @@
+
+:root {
+    --butter: #f6e7a8;
+    --butter-light: #fff9df;
+    --cream: #fffdf6;
+    --yellow-deep: #e6c85b;
+    --brown: #695638;
+    --brown-dark: #403521;
+    --text: #514a3c;
+    --border: #eee2b9;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    background: var(--butter-light);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.75;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 253, 246, .97);
+    box-shadow: 0 4px 20px rgba(64, 53, 33, .07);
+}
+
+.navbar-brand {
+    color: var(--brown-dark);
+    font-weight: 800;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #a18435;
+}
+
+.nav-link {
+    color: var(--brown);
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+/* Bagian pembuka */
+.hero {
+    margin-top: 66px;
+    padding: 65px 0;
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(246, 231, 168, .75),
+            transparent 32%
+        ),
+        linear-gradient(135deg, #fff9df, #f5e8b7);
+}
+
+.eyebrow {
+    color: #967b2f;
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    color: var(--brown-dark);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* Foto profil */
+.profile-photo {
+    width: 215px;
+    height: 215px;
+    object-fit: cover;
+    border: 7px solid var(--cream);
+    border-radius: 50%;
+    box-shadow: 0 12px 28px rgba(64, 53, 33, .15);
+}
+
+/* Kartu setiap bagian */
+.section-card {
+    padding: 30px;
+    margin-bottom: 25px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(64, 53, 33, .05);
+}
+
+/* Judul bagian */
+.section-title {
+    color: var(--brown-dark);
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 4px;
+    margin-top: 9px;
+    border-radius: 10px;
+    background: var(--yellow-deep);
+}
+
+h3 {
+    color: var(--brown);
+    font-weight: 750;
+}
+
+/* Tabel pendidikan */
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text);
+    vertical-align: middle;
+}
+
+.table thead th {
+    background: var(--butter);
+    color: var(--brown-dark);
+    white-space: nowrap;
+}
+
+.table-bordered > :not(caption) > * > * {
+    border-color: var(--border);
+    padding: 12px;
+}
+
+/* Daftar keterampilan */
+.skill-badge {
+    display: inline-block;
+    padding: 7px 13px;
+    margin: 4px 4px 4px 0;
+    border: 1px solid #e8d99d;
+    border-radius: 50px;
+    background: #fff7d4;
+    color: var(--brown);
+    font-size: .92rem;
+}
+
+/* Kartu proyek */
+.project-box {
+    height: 100%;
+    padding: 20px;
+    background: #fffaf0;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.project-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(64, 53, 33, .08);
+}
+
+.project-symbol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: var(--butter-light);
+    color: var(--brown);
+    font-weight: 800;
+}
+
+/* Form kontak */
+.form-label,
+.form-check-label,
+legend {
+    color: var(--brown-dark);
+}
+
+.form-control,
+.form-select {
+    padding: 11px 13px;
+    border: 1px solid #e2d39c;
+    border-radius: 11px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #c5a83f;
+    box-shadow: 0 0 0 .2rem rgba(230, 200, 91, .23);
+}
+
+.form-check-input:checked {
+    background-color: #9a7b26;
+    border-color: #9a7b26;
+}
+
+/* Tombol */
+.btn-butter {
+    padding: 10px 20px;
+    border: 1px solid var(--brown-dark);
+    border-radius: 10px;
+    background: var(--brown-dark);
+    color: #fffdf6;
+    font-weight: 650;
+}
+
+.btn-butter:hover {
+    border-color: #6e5926;
+    background: #6e5926;
+    color: white;
+}
+
+.btn-outline-butter {
+    padding: 10px 20px;
+    border: 1px solid #b59b4d;
+    border-radius: 10px;
+    color: var(--brown-dark);
+    font-weight: 650;
+}
+
+.btn-outline-butter:hover {
+    background: var(--butter);
+    color: var(--brown-dark);
+}
+
+/* Catatan dan footer */
+.note-box {
+    padding: 17px;
+    border-left: 4px solid var(--yellow-deep);
+    border-radius: 8px;
+    background: #fff8dc;
+}
+
+footer {
+    padding: 28px 0;
+    background: var(--brown-dark);
+    color: #fff9df;
+    text-align: center;
+}
+
+footer a {
+    color: var(--butter);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Tampilan HP dan tablet */
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 165px;
+        height: 165px;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .section-card {
+        padding: 21px;
+        border-radius: 17px;
+    }
+
+    .section-title {
+        font-size: 1.45rem;
+    }
+}

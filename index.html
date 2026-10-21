@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Aura Mariyana | Sistem Informasi</title>
+
+    <meta name="description" content="Website CV dan portofolio Aura Mariyana, mahasiswa Sistem Informasi Universitas Dian Nuswantoro.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda">PORTOFOLIO AURA.</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keterampilan">Keterampilan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- BERANDA -->
+        <section class="hero" id="beranda">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <p class="eyebrow">Welcome to my profile</p>
+
+                        <h1 class="display-4 mb-3">
+                            Halo, aku Aura!
+                        </h1>
+
+                        <h2 class="h4 mb-3">
+                            Mahasiswa Sistem Informasi
+                        </h2>
+
+                        <p class="mb-4">
+                           Halo! Nama saya Aura Mariyana Inayah Putri Himawan. Saya adalah mahasiswa aktif program studi Sistem Informasi di Fakultas Ilmu Komputer, yang berfokus pada pengembangan perangkat lunak 
+                            dan teknologi berbasis web. Memiliki ketertarikan yang besar dalam mempelajari struktur basis data, analisis sistem, 
+                            serta pemrosesan halaman web menggunakan teknologi HTML5, CSS, dan JavaScript.
+                        </p>
+
+                        <a href="#tentang" class="btn btn-butter me-2 mb-2">
+                            Kenali Saya
+                        </a>
+
+                        <a href="#kontak"
+                           class="btn btn-outline-butter mb-2">
+                            Hubungi Saya
+                        </a>
+
+                        <p class="mt-3 mb-0">
+                            <strong>Universitas Dian Nuswantoro</strong>
+                            <br>
+                            Fakultas Ilmu Komputer
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5 text-center order-1 order-lg-2">
+                        <!-- Ganti dengan foto profil kamu -->
+                        <img
+                            src="image/hironoo.jpg"
+                            alt="Foto profil Aura Mariyana"
+                            class="profile-photo img-fluid"
+                            onerror="this.style.display='none'; document.getElementById('fotoFallback').style.display='flex';">
+
+                        <div
+                            id="fotoFallback"
+                            class="profile-photo mx-auto align-items-center justify-content-center"
+                            style="display: none; background: #f6e7a8; color: #695638; font-size: 3rem; font-weight: 800;">
+                            AM
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG SAYA -->
+        <section class="py-5" id="tentang">
+            <div class="container">
+                <div class="section-card">
+                    <h2 class="section-title">Tentang Saya</h2>
+
+                   
+                    <p>
+                        Halo, saya Aura Mariyana Inayah Putri Himawan,
+                        mahasiswa Sistem Informasi di Universitas Dian Nuswantoro.
+                        Saya tertarik mempelajari teknologi, khususnya pembuatan website
+                        dan pengolahan data.
+                    </p>
+
+                    <p>
+                        Melalui perkuliahan, saya ingin memperdalam kemampuan di bidang
+                        teknologi informasi serta mencoba berbagai hal baru yang dapat
+                        menambah pengalaman dan pengetahuan saya.
+                    </p>
+
+                    <p class="mb-0">
+                        Saya percaya bahwa proses belajar dan pengalaman baru dapat
+                        membantu saya berkembang, baik secara akademik maupun pribadi.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section class="py-3" id="pendidikan">
+            <div class="container">
+                <div class="section-card">
+                    <h2 class="section-title">Riwayat Pendidikan</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Jenjang</th>
+                                    <th scope="col">Nama Institusi</th>
+                                    <th scope="col">Tahun</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>S1</td>
+                                    <td>
+                                        Universitas Dian Nuswantoro
+                                        <br>
+                                        <small>Sistem Informasi</small>
+                                    </td>
+                                    <td>2025–Sekarang</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>SMK</td>
+                                    <td>SMK Raden Umar Said</td>
+                                    <td>2022–2025</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>SMP</td>
+                                    <td>SMP 4 Kudus</td>
+                                    <td>2019–2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KETERAMPILAN -->
+        <section class="py-3" id="keterampilan">
+            <div class="container">
+                <div class="section-card">
+                    <h2 class="section-title">Keterampilan</h2>
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <h3 class="h5">Kemampuan Teknis</h3>
+
+                            <div>
+                                <span class="skill-badge">HTML</span>
+                                <span class="skill-badge">CSS</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">Bootstrap</span>
+                                <span class="skill-badge">Git &amp; GitHub</span>
+                                <span class="skill-badge">Basis Data Relasional</span>
+                                <span class="skill-badge">Microsoft Word</span>
+                                <span class="skill-badge">Canva</span>
+                                <span class="skill-badge">CapCut</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h3 class="h5">Kemampuan Personal</h3>
+
+                            <div>
+                                <span class="skill-badge">Komunikasi</span>
+                                <span class="skill-badge">Kerja Sama Tim</span>
+                                <span class="skill-badge">Kreativitas</span>
+                                <span class="skill-badge">Promosi Produk</span>
+                                <span class="skill-badge">Mau Belajar</span>
+                                <span class="skill-badge">Manajemen Waktu</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="note-box mt-4">
+                        <strong>Catatan:</strong>
+                        Keterampilan di atas merupakan kemampuan yang saya
+                        pelajari dan kembangkan melalui pendidikan serta
+                        pengalaman. Saya terus berusaha meningkatkannya
+                        melalui latihan dan proyek.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYEK -->
+        <section class="py-3" id="proyek">
+            <div class="container">
+                <div class="section-card">
+                    <h2 class="section-title">Proyek dan Pengalaman</h2>
+
+                    <p class="mb-4">
+                        Beberapa bidang proyek dan pengalaman yang pernah
+                        saya pelajari atau ikuti.
+                    </p>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6 col-lg-4">
+                            <article class="project-box">
+                                <div class="project-symbol mb-3">01</div>
+
+                                <h3 class="h5">Pengembangan Web</h3>
+
+                                <p class="mb-0">
+                                    Mempelajari struktur halaman web dengan
+                                    HTML, mengatur tampilan dengan CSS, dan
+                                    mengenal interaktivitas menggunakan
+                                    JavaScript.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <article class="project-box">
+                                <div class="project-symbol mb-3">02</div>
+
+                                <h3 class="h5">Basis Data</h3>
+
+                                <p class="mb-0">
+                                    Mempelajari konsep basis data relasional,
+                                    perancangan ERD, serta penggunaan SQL
+                                    untuk mengelola data.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <article class="project-box">
+                                <div class="project-symbol mb-3">03</div>
+
+                                <h3 class="h5">Kepanitiaan dan Volunteering</h3>
+
+                                <p class="mb-0">
+                                    Mengikuti kegiatan organisasi, kepanitiaan,
+                                    serta kegiatan sukarelawan untuk melatih
+                                    komunikasi, tanggung jawab, dan kerja sama.
+                                </p>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-4">
+                        <p class="mb-2">
+                            Lihat profil GitHub saya untuk mengenal proyek
+                            dan pembelajaran di bidang teknologi.
+                        </p>
+
+                        <a
+                            href="https://github.com/RereAura"
+                            class="btn btn-outline-butter"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Kunjungi GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="py-3 pb-5" id="kontak">
+            <div class="container">
+                <div class="section-card">
+                    <h2 class="section-title">Hubungi Saya</h2>
+
+                    <p>
+                        Silakan isi formulir berikut jika ingin mengirimkan
+                        pesan.
+                    </p>
+
+                    <form id="formKontak">
+
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">
+                                Nama
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nama"
+                                name="nama"
+                                placeholder="Masukkan nama kamu"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="nama@email.com"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subjek" class="form-label">
+                                Subjek
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="subjek"
+                                name="subjek"
+                                placeholder="Topik pesan"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">
+                                Pesan
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="pesan"
+                                name="pesan"
+                                rows="4"
+                                placeholder="Tulis pesan kamu di sini..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-butter">
+                            Kirim Pesan
+                        </button>
+
+                        <p
+                            id="statusForm"
+                            class="alert alert-success mt-3 d-none"
+                            aria-live="polite">
+                        </p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="mb-1">
+                &copy; <span id="tahun"></span>
+                Aura Mariyana Inayah Putri Himawan
+            </p>
+
+            <p class="mb-0">
+                Dibuat dengan HTML, CSS, JavaScript, dan Bootstrap.
+            </p>
+
+            <a
+                href="https://github.com/RereAura"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
